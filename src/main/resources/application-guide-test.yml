@@ -1,0 +1,27 @@
+# DataBase connection
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:[YOUR_POSTGRESQL_PORT]/[YOUR_DATABASE_NAME]"
+    username: "[YOUR_DATABASE_USER]"
+    password: "[YOUR_DATABASE_PASSWORD]"
+  # JPA Configuration
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.PostgreSQLDialect"
+        format_sql: true
+
+# Timezone
+timezone:
+  date:
+    bogota: "America/Bogota"
+
+# JWT Configuration
+jwt:
+  issuer: "www.test.com"
+  token:
+    secret: "[YOUR_SECRET_KEY]"
+    expires-in: "360000"
