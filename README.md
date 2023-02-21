@@ -27,6 +27,13 @@ This repository allows you the management of all authentication necessary for Pr
     * Send `AuthCustomerDto` in body request with `user_email` & `user_password`.
 
 
+### Required Libraries
+This project need some local libraries to run:
+
+* #### Product Customer Library
+  * `product-customer-lb`: This library contains custom exceptions and transversal dtos used in many microservices. [Product Customer App - Library](https://github.com/David34334/product-customer-library)
+
+
 ### Swagger Documentation
 
 --**[Pending]**--
